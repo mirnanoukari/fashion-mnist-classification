@@ -1,0 +1,9 @@
+optimizer:
+  _target_: torch.optim.Adam
+  lr: 0.003
+epochs: 1
+batch_size: 64
+model:
+  _target_: train.Classifier
+datamodule:
+  _target_: train.MNISTDataModule
